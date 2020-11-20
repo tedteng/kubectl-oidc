@@ -1,0 +1,12 @@
+name: 'kubectl-oidc-action'
+description: 'kubectl with oidc plugin'
+author: 'Ted Teng'
+branding:
+  icon: 'cloud'
+  color: 'blue'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  kubeconfig:
+    description: 'base64 encoded .kube/config'
